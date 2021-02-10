@@ -270,9 +270,43 @@
   // simple class that represents a person
 
 
-  class person {
-      name;
-      job;
+//   class Person {
+//       name;
+//       title;
 
-      constructor()
-  }
+//       constructor(inputName, inputTitle) {
+//           this.name = inputName;
+//           this.job = inputTitle;
+//       }
+
+//       hi() {
+//           return `Hi my name is ${this.name}`;
+//       }
+//   }
+
+//   class Hero extends Person {
+//       superpower;
+
+//       constructor(inputName, inputTitle, inputSuperpower) {
+
+//         super(inputName, inputTitle);
+
+//         this.superpower = inputSuperpower;
+//       }
+//   }
+
+//   class Villain extends Person {
+//       weakness;
+
+//       constructor(inputName, inputWeakness) {
+//           super(inputName, "Villain");
+//           this.weakness = inputWeakness;
+
+//       }
+      
+//       // to override a method for a subclass, reiterate the method name and assign it new rules and values
+//   }
+
+
+
+

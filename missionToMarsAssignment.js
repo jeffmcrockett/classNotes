@@ -8,16 +8,18 @@ class crewMember {
     title;
     name;
     assignedVehicle;
+    currentVehicle;
 
     constructor(name, title) {
         this.name = name;
         this.title = title;
         this.assignedVehicle = [];
+        this.currentVehicle = [];
         // choosing to assign positions to respective ships with the constructor
         // ! It would be better to assign crew to a ship 'type' instead of a specific spaceship if this code was meant to grow
         // the Enterprise is awesome so it really needs a Captain
-        if (this.title == 'Captain') {
-            this.assignedVehicle.push('Enterprise');
+        if (this.title == "Captain") {
+            this.assignedVehicle.push("Enterprise");
         }
         // the Narada is a Romulan mining vessel so Spock is the only one with a chance to operate it
         if (this.title == 'Officer') {
@@ -32,7 +34,7 @@ class crewMember {
     enterVehicle(vehicle2) {
         // thinking that I need to search all vehicle arrays for the existence of my person
         // so they can be removed from the ship they're on before jumping in another vehicle
-        if ()
+        // if ()
         // now placing the crew member on the new ship
         vehicle2.crewOnBoard.push(this.title);
     }
@@ -62,7 +64,10 @@ class vehicle {
     }
 
     isReady() {
-        if (this.assignedCrew = this.crewOnBoard) {
+        // CAPTAIN EXAMPLE: decided that there are many different Captains in a fleet so the most important 
+        // part is that a captain is on board, not necessarilly a specific captain
+        // that information is left for the crew class to determine if assignment = vehicle they are on.
+        if (this.assignedCrew == this.crewOnBoard) {
             return true;
         }
         else return false;
@@ -80,4 +85,9 @@ Kirk.enterVehicle(Enterprise);
 console.log(Kirk);
 console.log(Enterprise);
 let answer1 = Enterprise.isReady();
-    console.log(answer1);
+    if (answer1 = true) {
+        console.log("We are ready to depart!")
+    }
+    if (answer1 = false) {
+        console.log("Double check crew, something isn't right!")
+    }
