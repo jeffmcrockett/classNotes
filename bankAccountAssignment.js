@@ -11,7 +11,7 @@ class bankAccount {
     constructor(accountNumber, owner) {
         this.accountNumber = accountNumber;
         this.owner = owner;
-        let accountNumber = new transactionTable;
+        let ('account'+this.accountNumber) = new transactionTable();
     }
 
     charge(payee, amount) {
@@ -32,7 +32,7 @@ class transactionTable extends bankAccount {
     payee;
     amount;
 
-    constructor(payee1, amount1) {
+    constructor() {
         this.payee = [];
         this.amount = [];
     }

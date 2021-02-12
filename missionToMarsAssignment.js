@@ -17,11 +17,12 @@ class crewMember {
         this.currentVehicle = [];
         // choosing to assign positions to respective ships with the constructor
         // ! It would be better to assign crew to a ship 'type' instead of a specific spaceship if this code was meant to grow
+        // pushing title to the ships, not specific person name
         // the Enterprise is awesome so it really needs a Captain
         if (this.title == "Captain") {
             this.assignedVehicle.push("Enterprise");
         }
-        // the Narada is a Romulan mining vessel so Spock is the only one with a chance to operate it
+        // the Narada is a Romulan mining vessel so Spock (i.e. an Officer) is the only one with a chance to operate it
         if (this.title == 'Officer') {
             this.assignedVehicle.push('Narada');
         }
